@@ -1,3 +1,9 @@
+html{
+	height:100%;
+	background:url("piano.png") repeat center center;
+	background-size:cover;
+}
+
 div{
 	position:fixed;
 	left:0px;
@@ -7,10 +13,8 @@ div{
 	width: 1450px;
 	color: #FAF0E6;
 	text-align: center;
-	background-size: 1450px 850px;
-	background-image: url("piano.png");
-	background-repeat:no-repeat;
-}
+} 
+
 
 label{
 	position:absolute;
@@ -29,11 +33,11 @@ label{
 }
 
 textarea{
+	width:1200px;
+	height:300px;
 	position:absolute;
 	left:100px;
 	top:450px;
-	width:300px;
-	height:250px;
 	opacity:0.5;
 }
 
@@ -54,11 +58,4 @@ textarea{
     text-decoration: none;
     cursor: pointer;
     border:none;
-}
-
-.radio{
-	position:absolute;
-	left:300px;
-	top:450px;
-	color:white;
 }

@@ -12,10 +12,13 @@ def hello():
 def take_text():
 	text = request.form['text_to_convert']
 	if (len(text)==0):
-		return 0
+		return render_template("warning.html")
 	else:
-		playsound(text)
-		return render_template('new-music.html', music_filename="static/Yo.wav")
+		for i in xrange(0, len(text)):
+			if (text[i].isdigit()):
+				return render_template("warning2.html")
+	playsound(text)
+	return render_template('new-music.html', music_filename="static/Yo.wav")
 
 
 def convert(letter):
@@ -97,4 +100,5 @@ def playsound(text):
 
 	
 if __name__ == "__main__":
-    app.run()
+	app.debug = True
+	app.run()

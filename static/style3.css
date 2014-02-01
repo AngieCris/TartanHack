@@ -16,11 +16,17 @@ div{
 	color:white;
 	font-size:30px;
 }
-audio{
-	position: absolute;
-	top:470px;
-	left:550px;
-	padding:20px;
-	background:#F5DEB3;
+
+p{
+	text-align: center;
+	margin-top:100px;
+	margin-left:130px;
+	margin-bottom: 8000px;
+	padding-top:80px;
+	font-size:40px;
+	width:1200px;
+	height:200px;
+	background: #F5DEB3;
 	border-radius: 25px;
+	opacity:0.8;
 }
