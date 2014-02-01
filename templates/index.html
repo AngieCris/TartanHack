@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="static/style.css">
+    <title>Musify Me \(^o^)/</title>
+  </head>
+  <body>
+    <div style="font-family:'Arial Black', Gadget, sans-serif;font-size:40px">Music is the universal language of mankind<br></br><span style="font-family:'Lucida Console', Monaco, monospace;font-size:41px">LET IT SPEAK</span></div>
+    <form action="/music" method="post">
+      <label>Text input</label>
+      <textarea name="text_to_convert"></textarea>
+      <button type="submit" id="submit">Musify</button>
+      <input class="radio" type="radio" name="tempo" value="Adagio">Adagio - Slow
+      <input class="radio" type="radio" name="tempo" value="Andante">Andante - Walking pace
+      <input class="radio" type="radio" name="tempo" value="Moderato">Moderato - Moderate
+      <input class="radio" type="radio" name="tempo" value="Allegro">Allegro - Fast,lively
+      <input class="radio" type="radio" name="tempo" value="None" checked>None
+    </form>
+  </body>
+</html>
